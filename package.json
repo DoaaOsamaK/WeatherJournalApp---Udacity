@@ -1,0 +1,26 @@
+{
+  "name": "udacity-project-3-weather-journal-app",
+  "version": "1.0.0",
+  "description": "Udacity Weather App",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/FelixGeelhaar/udacity-project-3-weahter-journal-app.git"
+  },
+  "author": "Felix Geelhaar <felix@felixgeelhaar.de>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/FelixGeelhaar/udacity-project-3-weahter-journal-app/issues"
+  },
+  "homepage": "https://github.com/FelixGeelhaar/udacity-project-3-weahter-journal-app#readme",
+  "dependencies": {
+    "body-parser": "^1.20.3",
+    "cors": "^2.8.5",
+    "express": "^4.21.0",
+    "node-fetch": "^3.2.10"
+  }
+}
