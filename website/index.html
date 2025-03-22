@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weather Journal App</title>
+    <link
+      href="https://fonts.googleapis.com/css?family=Oswald:400,600,700|Ranga:400,700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div id="app">
+      <!-- Header Section -->
+      <div class="holder headline">
+        <h1>Weather Journal App</h1>
+      </div>
+
+      <!-- Zipcode Input Section -->
+      <div class="holder zip">
+        <label for="zip">Enter Zipcode Here</label>
+        <input
+          type="text"
+          id="zip"
+          placeholder="e.g., 12345"
+          aria-label="Enter zipcode"
+        />
+      </div>
+
+      <!-- Feelings Input Section -->
+      <div class="holder feel">
+        <label for="feelings">How Are You Feeling Today?</label>
+        <textarea
+          class="myInput"
+          id="feelings"
+          placeholder="Share your feelings..."
+          rows="5"
+          cols="40"
+          aria-label="Enter your feelings"
+        ></textarea>
+        <button id="generate" type="submit" aria-label="Generate entry">
+          Generate
+        </button>
+      </div>
+
+      <!-- Recent Entry Section -->
+      <div class="holder entry">
+        <div class="title">Most Recent Entry</div>
+        <div id="entryHolder">
+          <div id="date"><strong>Date:</strong> <span class="output"></span></div>
+          <div id="temp"><strong>Temperature:</strong> <span class="output"></span></div>
+          <div id="content"><strong>Feeling:</strong> <span class="output"></span></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- JavaScript File -->
+    <script src="app.js"></script>
+  </body>
+</html>
